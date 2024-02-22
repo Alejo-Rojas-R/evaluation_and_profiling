@@ -1,6 +1,10 @@
+import { useParams } from "react-router-dom";
+
 export const Modal = ({ setModalProperties, acceptFunction }) => {
+  const { id } = useParams();
+
   const handleConfirm = () => {
-    acceptFunction();
+    acceptFunction(id);
   }
 
   const handleCancel = () => {

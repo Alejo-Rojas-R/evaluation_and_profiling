@@ -8,6 +8,7 @@ import { Credits } from '../pages/private/Credits';
 import { Dashboard } from '../pages/private/Dashboard';
 import { Applicant } from '../pages/private/Applicant';
 import { Users } from '../pages/private/Users';
+import { NotFound } from '../pages/private/NotFound';
 
 export const Routing = () => {
   const jwt = localStorage.getItem('jwt');
@@ -23,6 +24,7 @@ export const Routing = () => {
         <Route path='/credits' element={!jwt ? <Navigate to='/' /> : <Credits />} />
         <Route path='/users' element={!jwt ? <Navigate to='/' /> : <Users />} />
         <Route path='/applicants/applicant/:id' element={<Applicant />} />
+        <Route path='/*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )

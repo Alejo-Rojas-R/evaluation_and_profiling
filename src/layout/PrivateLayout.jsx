@@ -1,7 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { menuOptions } from "../helpers/menuOptions";
 import { MdLogout } from "react-icons/md";
-import { Modal } from "../components/Modal";
 
 export const PrivateLayout = ({ children, title = '' }) => {
   const navigate = useNavigate();
@@ -14,7 +13,7 @@ export const PrivateLayout = ({ children, title = '' }) => {
 
   const handleLogout = () => {
     localStorage.removeItem('jwt');
-    navigate(0);
+    navigate('/');
   }
 
   return (

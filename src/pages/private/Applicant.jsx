@@ -29,11 +29,11 @@ export const Applicant = () => {
       [target.name]: target.value
     }));
   };
-
+  /*
   const handleProfiling = () => {
     fetchData(`private/perfilar_aspirante`, 'POST', editedFields);
   }
-
+  */
   const handleSave = () => {
     fetchData(`private/modificar_aspirante?id=${id}`, 'PUT', editedFields);
     setEdit(!edit);
@@ -46,8 +46,7 @@ export const Applicant = () => {
     } else {
       fetchData(`private/eliminar_aspirante?id=${id}`, 'DELETE', { id });
       if (response.status >= 200) {
-        navigate('/applicants');
-        navigate(0);
+        navigate('/');
       }
     }
   }

@@ -6,7 +6,6 @@ import { prettifyText } from '../../helpers/textFormatFunctions';
 import { IoSearch } from "react-icons/io5";
 
 export const Applicants = () => {
-
   const { response, loading, error, fetchData } = useFetch();
   const [document, setDocument] = useState('');
 
