@@ -8,7 +8,7 @@ export const PublicLayout = ({ children }) => {
     const jwt = localStorage.getItem('jwt');
 
     if (!jwt) {
-      navigate('/');
+      navigate('/login');
     }
   }, [])
 

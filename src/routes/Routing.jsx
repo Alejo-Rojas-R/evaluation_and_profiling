@@ -15,16 +15,16 @@ export const Routing = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={jwt ? <Navigate to='/applicants' /> : <Login />} />
-        <Route path='/about' element={!jwt ? <Navigate to='/' /> : <About />} />
-        <Route path='/applicants' element={!jwt ? <Navigate to='/' /> : <Applicants />} />
-        <Route path='/dashboard' element={!jwt ? <Navigate to='/' /> : <Dashboard />} />
-        <Route path='/how-to-use' element={!jwt ? <Navigate to='/' /> : <HowToUse />} />
-        <Route path='/trainings' element={!jwt ? <Navigate to='/' /> : <Trainings />} />
-        <Route path='/credits' element={!jwt ? <Navigate to='/' /> : <Credits />} />
-        <Route path='/users' element={!jwt ? <Navigate to='/' /> : <Users />} />
-        <Route path='/applicants/applicant/:id' element={<Applicant />} />
-        <Route path='/*' element={<NotFound />} />
+        <Route path='/login' element={jwt ? <Navigate to='/' /> : <Login />} />
+        <Route path='/about' element={!jwt ? <Navigate to='/login' /> : <About />} />
+        <Route path='/' element={!jwt ? <Navigate to='/login' /> : <Applicants />} />
+        <Route path='/dashboard' element={!jwt ? <Navigate to='/login' /> : <Dashboard />} />
+        <Route path='/how-to-use' element={!jwt ? <Navigate to='/login' /> : <HowToUse />} />
+        <Route path='/trainings' element={!jwt ? <Navigate to='/login' /> : <Trainings />} />
+        <Route path='/credits' element={!jwt ? <Navigate to='/login' /> : <Credits />} />
+        <Route path='/users' element={!jwt ? <Navigate to='/login' /> : <Users />} />
+        <Route path='/applicant/:id' element={<Applicant />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )

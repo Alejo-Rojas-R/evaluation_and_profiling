@@ -13,7 +13,7 @@ export const PrivateLayout = ({ children, title = '' }) => {
 
   const handleLogout = () => {
     localStorage.removeItem('jwt');
-    navigate('/');
+    navigate(0);
   }
 
   return (

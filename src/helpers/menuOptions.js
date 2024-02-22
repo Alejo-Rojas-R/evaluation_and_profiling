@@ -8,7 +8,7 @@ import { FaHandHoldingHeart } from "react-icons/fa6";
 
 export const menuOptions = [
   {
-    route: 'applicants',
+    route: '',
     component: 'Applicants',
     title: 'Aspirantes',
     icon: PiUsersFourFill,
