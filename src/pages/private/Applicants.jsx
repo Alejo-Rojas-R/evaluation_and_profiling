@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
 import { PrivateLayout } from '../../layout/PrivateLayout'
 import { useFetch } from '../../hooks/useFetch';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { prettifyText } from '../../helpers/textFormatFunctions';
 import { IoSearch } from "react-icons/io5";
 
 export const Applicants = () => {
   const { response, loading, error, fetchData } = useFetch();
   const [document, setDocument] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchData('private/listar_aspirantes', 'GET');

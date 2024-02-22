@@ -45,8 +45,11 @@ export const Applicant = () => {
       setModalProperties(() => (true));
     } else {
       fetchData(`private/eliminar_aspirante?id=${id}`, 'DELETE', { id });
-      if (response.status >= 200) {
+      if (response && response.status >= 200) {
         navigate('/');
+        setTimeout(() => {
+          navigate(0);
+        }, 500);
       }
     }
   }

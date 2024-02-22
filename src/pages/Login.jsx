@@ -15,8 +15,9 @@ export const Login = () => {
   const { response, loading, error, fetchData } = useFetch();
 
   useEffect(() => {
-    if (response) {
+    if (response && response.status >= 200) {
       localStorage.setItem('jwt', response.data.token);
+      navigate('/');
       navigate(0);
     }
   }, [response, error])

@@ -5,6 +5,7 @@ export const Modal = ({ setModalProperties, acceptFunction }) => {
 
   const handleConfirm = () => {
     acceptFunction(id);
+    setModalProperties(false);
   }
 
   const handleCancel = () => {
