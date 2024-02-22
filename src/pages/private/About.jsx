@@ -38,13 +38,24 @@ export const About = () => {
         <br />
         <div className="font-bold">Dependencias:</div>
         <div className="grid grid-cols-2">
-          <ul className="list-disc ms-6">
-            <li>Spring Data JPA</li>
-            <li>Spring Web </li>
-            <li>Spring Security</li>
-            <li>JUnit</li>
-            <li>Swagger </li>
-          </ul>
+          <div>
+            <ul className="list-disc ms-6">
+              <li>Spring Data JPA</li>
+              <li>Spring Web </li>
+              <li>Spring Security</li>
+              <li>JUnit</li>
+              <li>Swagger </li>
+            </ul>
+          </div>
+          <div>
+            <div className="grid grid-cols-2">
+              <ul className="list-disc ms-6">
+                <li>Axios</li>
+                <li>React Icons</li>
+                <li>React Router Dom</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <br />
         <p>La API se encuentra documentada en Swagger y se podrá probar la funcionalidad de cada uno de los Endpoints disponibles.</p>
