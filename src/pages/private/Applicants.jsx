@@ -42,7 +42,7 @@ export const Applicants = () => {
     <PrivateLayout title='Aspirantes'>
       <div className='my-5 flex'>
         <form onSubmit={handleSearch} className='flex w-full'>
-          <input type='text' className='shadow appearance-none rounded-full py-2 px-3 text-black me-2 bg-senary' onChange={handleChange} value={document} />
+          <input type='text' className='shadow appearance-none rounded-full py-2 px-3 text-black me-2 bg-senary' onChange={handleChange} value={document} placeholder='Numero de documento' />
           <button type='submit' className='bg-tertiary hover:bg-secondary text-white font-bold py-2 px-4 rounded-full flex items-center' ><IoSearch className='me-2' /> Buscar</button>
         </form>
         {
