@@ -61,17 +61,17 @@ export const About = () => {
         <p>La API se encuentra documentada en Swagger y se podrá probar la funcionalidad de cada uno de los Endpoints disponibles.</p>
         <br />
         <div className="flex justify-center gap-3">
-          <a className="flex items-center" href="https://evaluacion-y-perfilamiento.up.railway.app" target="_blank" rel="noopener noreferrer">
-            <div className="flex items-center bg-secondary hover:bg-primary text-white py-2 px-4 rounded-full">
-              <SiRailway /> <div className="ms-3">Railway</div></div></a>
-
           <a className="flex items-center" href="https://github.com/Alejo-Rojas-R/MakaiaProyectoFinal" target="_blank" rel="noopener noreferrer">
             <div className="flex items-center bg-secondary hover:bg-primary text-white py-2 px-4 rounded-full">
-              <FaGithub /> <div className="ms-3">GitHub</div> </div></a>
+              <FaGithub /> <div className="ms-3">GitHub</div>
+            </div>
+          </a>
 
           <a className="flex items-center" href="https://evaluacion-y-perfilamiento.up.railway.app/swagger-ui/index.html#/" target="_blank" rel="noopener noreferrer">
             <div className="flex items-center bg-secondary hover:bg-primary text-white py-2 px-4 rounded-full">
-              <SiSwagger /> <div className="ms-3">Swagger</div> </div></a>
+              <SiSwagger /> <div className="ms-3">Swagger</div>
+            </div>
+          </a>
         </div>
       </div>
     </PrivateLayout>
