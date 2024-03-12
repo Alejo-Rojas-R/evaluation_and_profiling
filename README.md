@@ -1,6 +1,6 @@
 # 📑 Evaluation and Profiling
 
-This application was designed to systematize the process of how the HR managers categorize the candidates that enroll in [Betek](https://betek.la/)'s academic courses. The backend for this application is developed with the Spring framweork and its documentation can be found in the following links.
+This application was designed to systematize the process of how the HR managers categorize the candidates that enroll in [Betek](https://betek.la/)'s academic courses. The backend for this application is developed with the Spring framework and its documentation can be found in the following links.
 
 #### :link: [API RESTful Documentation (EN)](https://github.com/Alejo-Rojas-R/MakaiaProyectoFinal/blob/main/README-en.md)
 #### :link: [API RESTful Documentation (ES)](https://github.com/Alejo-Rojas-R/MakaiaProyectoFinal)
